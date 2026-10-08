@@ -2,6 +2,7 @@
   "name": "voting",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://127.0.0.1:8545",
   "dependencies": {
     "@testing-library/dom": "^10.4.2",
     "@testing-library/jest-dom": "^6.9.1",
@@ -10,7 +11,8 @@
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "web3": "^1.10.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,5 +37,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.29.1",
+    "http-proxy-middleware": "^2.0.10"
   }
 }
